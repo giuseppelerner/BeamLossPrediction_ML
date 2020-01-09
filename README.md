@@ -1,6 +1,10 @@
 
 
 ```python
+# machine learning model to predict the loss rate of the beam in the main collimators as a function of a set of operational parameters
+# The loss rate is expressed through the IR7_lifetime variable (high IR7 lifetime = low loss rate)
+# The input variables are retrieved from the CERN Logging Database, arranged in dataframes and saved in csv files in a separate notebook
+
 import pandas as pd
 import numpy as np
 import logging 
@@ -21,10 +25,6 @@ from keras.optimizers import SGD #test keras
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-# machine learning model to predict the loss rate of the beam in the main collimators as a function of a set of operational parameters
-# The loss rate is expressed through the IR7_lifetime variable (high IR7 lifetime = low loss rate)
-# The input variables are retrieved from the CERN Logging Database, arranged in dataframes and saved in csv files in a separate notebook
 
 ```
 
